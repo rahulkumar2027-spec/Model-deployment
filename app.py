@@ -11,7 +11,7 @@ st.set_page_config(page_title="Iris Classifier",page_icon="💐")
 def load_model():
   model_path = "model.pkl"
   if os.path.esists(model_path):
-    with open(model_path,'rb' as file:
+    with open(model_path,'rb') as file:
       return pickle.load(file)
 else:
  st.error(f"Model file'{model_path}' not found")
