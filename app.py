@@ -13,9 +13,9 @@ def load_model():
   if os.path.esists(model_path):
     with open(model_path,'rb') as file:
       return pickle.load(file)
-else:
- st.error(f"Model file'{model_path}' not found")
-  return None
+ else:
+   st.error(f"Model file'{model_path}' not found")
+    return None
 
 model = load_model()
 
