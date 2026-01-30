@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 
-st.set_page_config(page_title"Iris Classifier",page_icon="💐")
+st.set_page_config(page_title="Iris Classifier",page_icon="💐")
 
 @st.cache_resource
 def load_model():
