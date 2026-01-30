@@ -9,7 +9,7 @@ st.set_page_config(page_title"Iris Classifier",page_icon="💐")
 
 @st.cache_resource
 def load_model():
-  model_path = "Iris_model.pkl"
+  model_path = "model.pkl"
   if os.path.esists(model_path):
     with open(model_path,'nb' as file:
       return pickle.load(file)
